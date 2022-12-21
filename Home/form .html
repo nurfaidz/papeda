@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Form Mandiri</title>
+  </head>
+  <body>
+ 
+      <div class="container">
+ 
+        <h2> <b>Form Mandiri </h2>
+         
+         
+
+         
+        <!-- Tombol untuk menampilkan modal-->
+        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Masukan data</button>
+         
+        <!-- Modal -->
+         
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         
+        <div class="modal-dialog">
+         
+        <div class="modal-content">
+         
+         
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" >x</button>
+         
+
+         
+        </div>
+         
+         
+         
+        <div class="modal-body">
+         
+        <form action="p_save.php" name="modal_popup" enctype="multipart/form-data" method="POST">
+         
+         
+        <div class="form-group" style="padding-bottom: 20px;">
+        <label for="Name">Nama Lengkap</label>
+        <input type="text" name="name" class="form-control" placeholder="Nama lengkap" required/>
+        </div>
+         
+         
+         
+        <div class="form-group" style="padding-bottom: 20px;">
+        <label for="alamat">Alamat</label>
+        <textarea name="alamat" class="form-control" placeholder="Masukkan alamat anda" required/></textarea>
+        </div>
+         
+         
+         
+        <div class="form-group" style="padding-bottom: 20px;">
+        <label for="hobi">Email</label>
+        <input type="text" name="hobi" class="form-control" placeholder="Alamat email anda" required/>
+        </div>
+        <div class="form-group" style="padding-bottom: 20px;">
+        <label for="hobi">NIK</label>
+        <input type="text" name="hobi" class="form-control" placeholder="Masukan NIK anda" required/>
+        </div>
+         
+         
+         
+        <div class="form-group" style="padding-bottom: 20px;">
+        <label for="tgl">Tanggal Lahir</label>
+        <input class="form-control" id="tgl" name="tgl" placeholder="MM/DD/YYY" type="text" required/>
+        </div>
+         
+         
+         
+        <div class="form-group">
+        <label for="exampleInputEmail1">jenis Kelamin</label> 
+        <label class="radio-inline">
+        <input type="radio" name="jenis" id="jenis" value="L" required data-fv-notempty-message="Tidak boleh kosong"> Laki-laki
+        </label>
+        <label class="radio-inline">
+        <input type="radio" name="jenis" id="jenis" value="P" required data-fv-notempty-message="Tidak boleh kosong"> Perempuan
+        </label>
+        </div>
+         
+        <!-- footer modal -->
+         
+        <div class="modal-footer">
+        <button class="btn btn-success" type="submit">
+        Simpan
+        </button>
+         
+        <button type="reset" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">
+        Cancel
+        </button>
+        </div>
+         
+         
+        </form>
+         
+        </div>
+         
+        </div>
+         
+        </div>
+         
+        </div>
+ 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
